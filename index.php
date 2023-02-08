@@ -1,7 +1,5 @@
 <?   session_start();
 
- //  print_r($_POST);
-
     if(isset($_SESSION["login"])){
         header("Location: ./table.php");
       }
