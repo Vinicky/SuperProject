@@ -1,14 +1,11 @@
 <?php
 require_once "service.php";
-  
 
 Class requests {
   private $method;
   private $GETdata;
   private $POSTdata;
   private $ser;
-  
-  
   public function __construct($conn) {
     $this->ser=new Service($conn);
     $this->method;$_SERVER["REQUEST_METHOD"];
@@ -27,33 +24,16 @@ Class requests {
   switch ($cmd) {
   
   case "getFirm":  $this->output($this->ser->getFirm($_GET["id"])); 
-    break;
-   
-        
+    break;  
    default:$this->output ("err"); 
   }
   }
   
-
 private function output ($str) {
     if (!is_array($str))
          echo json_encode(array("msg"=>$str));
     else 
         echo json_encode($str);
-
 }
-
-  
 }
-  
-  
-  
-
-/*
-echo "<pre>";
-print_r($_GET);
-print_r($_POST);
-print_r($_SERVER);
-*/
-
 ?>
