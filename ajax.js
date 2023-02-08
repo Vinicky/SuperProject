@@ -1,6 +1,3 @@
-//$(function() {
-  
-
 function getFirm(url,id) {  
   
 $.getJSON( url+"procedure.php?cmd=getFirm&id="+id, function( data ) {
@@ -33,15 +30,9 @@ $.getJSON( url+"?cmd=getFirm&id="+id, function( data ) {
 }
 
 
-
-
-// post-submit callback
-
 function processJson(data) {
     console.log(data.msg);
     
     if (data.msg==-1) $("#output1").html("Error");
     else {$("#output1").html("OK"); $("form").hide();} 
 }
-
-//});//ready
