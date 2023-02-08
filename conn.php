@@ -3,10 +3,10 @@ $username = "lm";
 $passwd = "";
 
 
-$servername = "uvdb63.active24.cz";
-$usernameDb = "crmskchccz";
+$servername = "localhost";
+$usernameDb = "root";
 $password = "";
-$dbname = "crmskchccz";
+$dbname = "crm";
 $conn = new mysqli($servername, $usernameDb, $password, $dbname);
  $conn->query("set names utf8");
 
