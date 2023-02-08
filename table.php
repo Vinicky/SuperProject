@@ -11,24 +11,23 @@ if(isset($_GET["search"])){
 <head>
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv='cache-control' content='no-cache'>
-<meta http-equiv='expires' content='0'>
-<meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tableStyle.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-<link rel="stylesheet" href="editFirm/editFirmForm2.css?v=<?php echo filemtime("editFirm/editFirmForm2.css") ?>">
+    <link rel="stylesheet" href="editFirm/editFirmForm2.css?v=<?php echo filemtime("editFirm/editFirmForm2.css") ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   
-   
    <script src="editFirm/edit.js"></script>
    <script src="ajax.js?v=<?php echo filemtime("ajax.js") ?>"></script>
-  <script src="table.js?v=<?php echo filemtime("table.js") ?>"></script>
-  <script src="clickRow.js?v=<?=time()?>"></script>
+   <script src="table.js?v=<?php echo filemtime("table.js") ?>"></script>
+   <script src="clickRow.js?v=<?=time()?>"></script>
    <script src="select.js"></script>
      
     
@@ -65,7 +64,6 @@ if(isset($_GET["search"])){
     </script>
 </head>
 <body>
-
                 <table id="basic" class="display">                         
                     <thead id="table-head">
                        
@@ -230,9 +228,6 @@ if(isset($_GET["search"])){
 <?php 
 include "editFirm/editFirmForm2.php";?>
 </main>
-
 </div>
-          
-
 </body>
 </html>
